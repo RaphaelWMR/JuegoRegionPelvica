@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Región Pélvica</title>
+    <link rel="shortcut icon" href="img/icono.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="init();">
+    <header class="site-header inicio">
+        <div class="cabeza">
+            <div class="titulos">
+                <img src="img/logoupch.png" alt="logo">
+                <a href="index.html" class="btn-titulo">
+                    <h1>Región <br> Pélvica</h1>
+                </a>
+            </div>
+            <div>
+                <a href="#juego" class="boton boton-empezar" onclick="pregunta();">Jugar</a>
+            </div>
+        </div>
+    </header>
+    <section id="juego" class="seccion contenedor seccion-juego">
+        <h2>¿Dónde está <span id="pregunta-m">...</span>?</h2>
+        <div class="juego">
+            <div class="botones-juego bjl">
+                <a id="b01" class="boton-seleccionar" onclick="responder(1);">01</a>
+                <br>
+                <a id="b02" class="boton-seleccionar" onclick="responder(2);">02</a>
+                <br>
+                <a id="b03" class="boton-seleccionar" onclick="responder(3);">03</a>
+                <br>
+                <a id="b04" class="boton-seleccionar" onclick="responder(4);">04</a>
+                <br>
+                <a id="b05" class="boton-seleccionar" onclick="responder(5);">05</a>
+                <br>
+                <a id="b06" class="boton-seleccionar" onclick="responder(6);">06</a>
+                <br>
+                <a id="b07" class="boton-seleccionar" onclick="responder(7);">07</a>
+                <br>
+                <a id="b08" class="boton-seleccionar" onclick="responder(8);">08</a>
+                <br>
+                <a id="b09" class="boton-seleccionar" onclick="responder(9);">09</a>
+                <br>
+                <a id="b10" class="boton-seleccionar" onclick="responder(10);">10</a>
+                <br>
+                <a id="b11" class="boton-seleccionar" onclick="responder(11);">11</a>
+            </div>
+            <div class="imagen-vaca">
+                <img src="img/cow.png" alt="vaca">
+            </div>
+            <div class="respuesta">
+                <div id="gif-cow" class="gif-resultado">
+                </div>
+                <p id="tf"></p>
+            </div>
+            <div class="botones-juego bjr">
+                <a id="b12" class="boton-seleccionar" onclick="responder(12);">12</a>
+                <br>
+                <a id="b13" class="boton-seleccionar" onclick="responder(13);">13</a>
+                <br>
+                <a id="b14" class="boton-seleccionar" onclick="responder(14);">14</a>
+                <br>
+                <a id="b15" class="boton-seleccionar" onclick="responder(15);">15</a>
+                <br>
+                <a id="b16" class="boton-seleccionar" onclick="responder(16);">16</a>
+                <br>
+                <a id="b17" class="boton-seleccionar" onclick="responder(17);">17</a>
+                <br>
+                <a id="b18" class="boton-seleccionar" onclick="responder(18);">18</a>
+                <br>
+                <a id="b19" class="boton-seleccionar" onclick="responder(19);">19</a>
+                <br>
+                <a id="b20" class="boton-seleccionar" onclick="responder(20);">20</a>
+                <br>
+                <a id="b21" class="boton-seleccionar" onclick="responder(21);">21</a>
+                <br>
+                <a id="b22" class="boton-seleccionar" onclick="responder(22);">22</a>
+            </div>
+        </div>
+        <div class="seccion-inf">
+            <a class=" boton boton-jugar-de-nuevo" onclick="pregunta();">Jugar de nuevo</a>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="partFooter fp">
+            <a href="index.html" class="fp">Región Pélvica</a>
+        </div>
+        <div class="partFooter">
+            <h3 class="centrar-texto">Universidad Peruana <br>Cayetano Heredia</h3>
+            <p class="centrar-texto">Facultad de Medicina Veterinaria<br>y Zootecnica</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
